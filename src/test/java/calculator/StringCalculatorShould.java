@@ -6,14 +6,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StringCalculatorShould {
     
-    private StringCalculator calculator;
+    private StringCalculator stringCalculator;
     
      @Rule
     public ExpectedException thrown = ExpectedException.none();
     
     @Before
     public void initialize() {
-        calculator = new StringCalculator();
+        stringCalculator = new StringCalculator();
     }
 
     @Test
