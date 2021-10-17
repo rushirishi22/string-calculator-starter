@@ -1,5 +1,9 @@
 package calculator;
 
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -26,7 +30,7 @@ class StringCalculatorShould {
     void string_with_single_number_should_return_number_as_int() {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(1, stringCalculator.add("1"));
-        assertEquals(5, stringCalculator.add("5"));
+        
     }
     
     @Test
